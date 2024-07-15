@@ -1,8 +1,6 @@
 import cv2
 import streamlit as st
 
-st.set_page_config("TimeLapse")
-st.title("Time lapse creator")
 def create_timelapse(input_video_path, frames_to_skip, output_video_path):
     # Open the input video
     cap = cv2.VideoCapture(input_video_path)
